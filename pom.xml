@@ -32,5 +32,11 @@
       <artifactId>freemarker</artifactId>
       <version>2.3.27-incubating</version>
     </dependency>
+
+    <dependency>
+      <groupId>com.nablarch.dev</groupId>
+      <artifactId>nablarch-test-support</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 </project>

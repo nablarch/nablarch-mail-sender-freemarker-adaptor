@@ -7,6 +7,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import nablarch.test.support.SystemRepositoryResource;
+import org.junit.Rule;
 import org.junit.Test;
 
 import freemarker.template.Configuration;
@@ -21,13 +23,15 @@ import nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader;
  */
 public class FreeMarkerMailProcessorContainerManagedTest {
 
+    @Rule
+    public SystemRepositoryResource systemRepositoryResource = new SystemRepositoryResource(
+            "nablarch/common/mail/freemarker/FreeMarkerMailProcessorContainerManagedTest.xml");
+
     /**
      * コンポーネント設定ファイルで構築するテスト。
      */
     @Test
     public void testProcessConfiguredByXml() {
-        SystemRepository.load(new DiContainer(new XmlComponentDefinitionLoader(
-                "nablarch/common/mail/freemarker/FreeMarkerMailProcessorContainerManagedTest.xml")));
 
         FreeMarkerMailProcessor sut = SystemRepository.get("templateEngineMailProcessor");
 
