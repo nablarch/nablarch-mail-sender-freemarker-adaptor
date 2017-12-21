@@ -1,4 +1,4 @@
-package nablarch.common.mail.freemarker;
+package nablarch.integration.mail.freemarker;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
@@ -18,6 +18,7 @@ import freemarker.template.Configuration;
 import freemarker.template.TemplateException;
 import nablarch.common.mail.TemplateEngineProcessedResult;
 import nablarch.common.mail.TemplateEngineProcessingException;
+import nablarch.integration.mail.freemarker.FreeMarkerMailProcessor;
 
 /**
  * {@link FreeMarkerMailProcessor}のテストクラス。

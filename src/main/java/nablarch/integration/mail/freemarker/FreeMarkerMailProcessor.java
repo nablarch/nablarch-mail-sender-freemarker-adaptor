@@ -1,4 +1,4 @@
-package nablarch.common.mail.freemarker;
+package nablarch.integration.mail.freemarker;
 
 import java.io.IOException;
 import java.io.StringWriter;
