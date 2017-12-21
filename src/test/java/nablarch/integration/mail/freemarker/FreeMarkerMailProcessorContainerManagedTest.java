@@ -14,7 +14,6 @@ import freemarker.template.Configuration;
 import nablarch.common.mail.TemplateEngineProcessedResult;
 import nablarch.core.repository.SystemRepository;
 import nablarch.core.repository.di.ComponentFactory;
-import nablarch.integration.mail.freemarker.FreeMarkerMailProcessor;
 import nablarch.test.support.SystemRepositoryResource;
 
 /**
