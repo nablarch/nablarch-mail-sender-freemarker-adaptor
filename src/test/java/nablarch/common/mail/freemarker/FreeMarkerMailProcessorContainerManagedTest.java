@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import nablarch.test.support.SystemRepositoryResource;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -15,8 +14,7 @@ import freemarker.template.Configuration;
 import nablarch.common.mail.TemplateEngineProcessedResult;
 import nablarch.core.repository.SystemRepository;
 import nablarch.core.repository.di.ComponentFactory;
-import nablarch.core.repository.di.DiContainer;
-import nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader;
+import nablarch.test.support.SystemRepositoryResource;
 
 /**
  * {@link FreeMarkerMailProcessor}をコンポーネント設定ファイルで構築する場合のテストクラス。
