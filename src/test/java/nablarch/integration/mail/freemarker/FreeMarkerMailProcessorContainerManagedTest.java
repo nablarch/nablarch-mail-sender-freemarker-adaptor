@@ -24,7 +24,7 @@ public class FreeMarkerMailProcessorContainerManagedTest {
 
     @Rule
     public SystemRepositoryResource systemRepositoryResource = new SystemRepositoryResource(
-            "nablarch/common/mail/freemarker/FreeMarkerMailProcessorContainerManagedTest.xml");
+            "nablarch/integration/mail/freemarker/FreeMarkerMailProcessorContainerManagedTest.xml");
 
     /**
      * コンポーネント設定ファイルで構築するテスト。
@@ -53,7 +53,7 @@ public class FreeMarkerMailProcessorContainerManagedTest {
         public Configuration createObject() {
             Configuration cfg = new Configuration(Configuration.getVersion());
             ClassLoader classLoader = ConfigurationFactory.class.getClassLoader();
-            cfg.setClassLoaderForTemplateLoading(classLoader, "nablarch/common/mail/freemarker/");
+            cfg.setClassLoaderForTemplateLoading(classLoader, "nablarch/integration/mail/freemarker/");
             return cfg;
         }
     }
